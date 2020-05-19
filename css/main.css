@@ -60,6 +60,7 @@ body, html {
 
 .info .text {
   margin-top: 150px;
+  width: 80%;
 }
 
 .info .text h1 {
@@ -141,7 +142,8 @@ body, html {
     text-align: center;
   }
   .info .text {
-    margin-top: 20px;
+    margin-top: 0px;
+    width: 90%;
   }
   .btn-clasic {
     margin-bottom: 20px;

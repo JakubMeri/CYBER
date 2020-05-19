@@ -58,12 +58,14 @@ body, html{
         h2{
             margin-bottom: 50px;
             font-family: 'Anton', sans-serif;
+            text-align: center;
         }
         span{
             width: 50%;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
+            text-transform: capitalize;
         }
         .odpoved{
             cursor: pointer;
@@ -76,7 +78,9 @@ body, html{
         justify-content: center;
         text-align: center;
         color: white;
-        text-shadow: 3px 3px 3px grey;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        font-family: "Anton", sans-serif;
+        font-size: 30px;
     }
 }
 .modal{
@@ -89,6 +93,15 @@ body, html{
     justify-content: center;
     flex-direction: column;
     z-index: 2;
+    .data{
+        text-align: center;
+        width: 90%;
+        span{
+            font-family: "Anton", sans-serif;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+    }
 }
 .btn-clasic{
     width: 150px;

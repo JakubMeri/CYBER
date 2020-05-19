@@ -91,6 +91,7 @@ body, html {
 .test .question h2 {
   margin-bottom: 50px;
   font-family: 'Anton', sans-serif;
+  text-align: center;
 }
 
 .test .question span {
@@ -102,6 +103,7 @@ body, html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-transform: capitalize;
 }
 
 .test .question .odpoved {
@@ -121,7 +123,9 @@ body, html {
           justify-content: center;
   text-align: center;
   color: white;
-  text-shadow: 3px 3px 3px grey;
+  text-shadow: 2px 2px 2px black;
+  font-family: "Anton", sans-serif;
+  font-size: 30px;
 }
 
 .modal {
@@ -141,6 +145,17 @@ body, html {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 2;
+}
+
+.modal .data {
+  text-align: center;
+  width: 90%;
+}
+
+.modal .data span {
+  font-family: "Anton", sans-serif;
+  font-size: 25px;
+  margin-bottom: 30px;
 }
 
 .btn-clasic {
