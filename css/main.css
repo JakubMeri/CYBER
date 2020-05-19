@@ -130,7 +130,6 @@ body, html {
         grid-template-rows: auto;
   }
   .info {
-    margin-top: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -138,6 +137,9 @@ body, html {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+  }
+  .info .text {
+    margin-top: 20px;
   }
   .btn-clasic {
     margin-bottom: 20px;

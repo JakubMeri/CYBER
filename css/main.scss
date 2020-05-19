@@ -87,10 +87,12 @@ body, html{
         grid-template-rows: auto;
     }
     .info{
-        margin-top: 20px;
         align-items: center;
         justify-content: center;
         text-align: center;
+        .text{
+            margin-top: 20px;
+        }
     }
     .btn-clasic{
         margin-bottom: 20px;
