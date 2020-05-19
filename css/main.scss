@@ -86,6 +86,11 @@ body, html{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+    .info{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
     .btn-clasic{
         margin-bottom: 20px;
     }
