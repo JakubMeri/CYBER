@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*CSS VARIABLES*/
+$bg: linear-gradient(to right ,#0BBFA7, #4200F6);
+
 body, html{
     min-height: 100vh;
     font-family: sans-serif;
@@ -30,7 +33,7 @@ body, html{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to right ,#0BBFA7, #4200F6);
+    background: $bg;
     height: 100vh;
     color: white;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.308);
@@ -60,7 +63,7 @@ body, html{
 .btn-clasic{
     width: 200px;
     height: 50px;
-    background: linear-gradient(to right ,#0BBFA7, #4200F6);
+    background: $bg;
     color: white;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.308);
     text-transform: uppercase;
@@ -75,6 +78,7 @@ body, html{
     justify-content: center;
     font-size: 14px;
     text-decoration: none;
+    border-radius: 10px;
 }
 .btn-clasic:hover{
     letter-spacing: .5px;
