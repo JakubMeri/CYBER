@@ -29,6 +29,8 @@ body, html {
   text-decoration: none;
   font-weight: bold;
   font-size: 25px;
+  z-index: 3;
+  text-shadow: 1px 1px 1px black;
 }
 
 .img-home {
