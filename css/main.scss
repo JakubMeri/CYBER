@@ -40,6 +40,7 @@ body, html{
     justify-content: flex-start;
     text-align: left;
     font-weight: bold;
+    position: relative;
     .text{
         margin-top: 150px;
         width: 80%;
@@ -84,6 +85,34 @@ body, html{
 .btn-clasic:hover{
     letter-spacing: .5px;
 }
+.scroll{
+    width: 20px;
+    height: 50px;
+    border: solid 2px white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    display: none;
+}
+.scroll::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: white;
+    width: 15px;
+    height: 15px;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate{
+    from{
+        top: 0;
+    }
+    to{
+        top: 30px;
+    }
+}
 
 
 @media (max-width: 500px){
@@ -102,5 +131,8 @@ body, html{
     }
     .btn-clasic{
         margin-bottom: 20px;
+    }
+    .scroll{
+        display: block;
     }
 }
