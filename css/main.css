@@ -130,6 +130,7 @@ body, html {
         grid-template-rows: auto;
   }
   .info {
+    margin-top: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
