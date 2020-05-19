@@ -35,7 +35,7 @@ img: "https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
     otazka: "Aká je skratka bezpečnostného certifikátu?",
     odpovede:[{
     odpoved: "SSL certifikát",
-    spravna: 0
+    spravna: 1
     },
 {
     odpoved: "SML certifikát",
@@ -43,7 +43,7 @@ img: "https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
     },
     {
     odpoved: "SLS certifikát",
-    spravna: 1
+    spravna: 0
         }
     ],
     hint: "INFO",
@@ -155,12 +155,12 @@ const loadQuestion = () => {
         if(odpoved.checked){
             if(odpoved.value == 1){
                 modal.style.display = "flex";
-                document.querySelector(".data").innerHTML = "<span>SPRÁVNA ODPOVEĎ</span><br>" + otazka[Q].hint;
+                document.querySelector(".data").innerHTML = "<span>SPRÁVNA ODPOVEĎ</span><br><br>" + otazka[Q].hint;
                 spravne.push(1);
             }
             else{
                 modal.style.display = "flex";
-                document.querySelector(".data").innerHTML = `<span>NESPRÁVNA ODPOVEĎ</span><br> ${otazka[Q].hint}`;
+                document.querySelector(".data").innerHTML = `<span>NESPRÁVNA ODPOVEĎ</span><br><br> ${otazka[Q].hint}`;
                 spravne.push(0);
             }
         }
@@ -178,10 +178,19 @@ let nextQ = () =>{
     document.getElementById("next").addEventListener("click", () => {
         if(Q[0] == otazka.length - 1){
             modal.style.display = "none";
-
-                test.innerHTML = `<h2>Správne si zodpovedal na <br>${spravne.reduce( (count, curent) => curent += count)} / ${otazka.length}b</h2> <button onclick= relocate() class='btn-clasic'>DOMOV</button>`;
+                let hodnotenie = spravne.reduce( (count, curent) => curent += count)
+                test.innerHTML = `<h2>Správne si zodpovedal na <br> ${hodnotenie} / ${otazka.length}b</h2> <button onclick= relocate() class='btn-clasic'>DOMOV</button>`
                 image.style.background = "linear-gradient(to right ,#0BBFA7, #4200F6)";
-                image.innerHTML = "Zamakaj na sebe";
+                if(hodnotenie >= 7){
+                    image.innerHTML = "Veľmi dobre";
+                }
+                else if(hodnotenie >= 4){
+                    image.innerHTML = "Zaber na svojom vzdelaní";
+                }
+                else{
+                    image.innerHTML = "Radšej na internet nechoď";
+                }
+                
         }
         else if(Q[0] == otazka.length - 2){
             document.getElementById("next").innerHTML = "KONIEC";
