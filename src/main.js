@@ -14,7 +14,7 @@ odpovede:[{
     spravna: 0
 }
 ],
-hint: "nejake kokotiny, co ti napovie",
+hint: "INFO",
 img: "https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
 },
 {
@@ -32,7 +32,7 @@ img: "https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
         spravna: 0
     }
     ],
-    hint: "nejake kokotiny, co ti napovie",
+    hint: "INFO",
     img: "https://www.soitron.com/wp-content/uploads/2019/01/iStock-614137876-scaled.jpg"
     },
 ];
