@@ -97,7 +97,7 @@ img: ".././img/URL.jpg"
             }
             ],
             hint: "Šifrovanie emailov má zmysel v prípade, že prostredníctvom e-mailu posielame citlivé údaje, či už firemné alebo súkromné. Tento krok zťažuje hackerom získať vaše informácie.",
-            img: ".././img/VIRUS.jpg"
+            img: ".././img/WRITE.jpg"
             },
             {
                 otazka: "Čo je to počítačový vírus?",
