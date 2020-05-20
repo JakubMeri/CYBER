@@ -11,6 +11,11 @@ body, html {
   font-family: sans-serif;
 }
 
+.odpoved {
+  width: 20px;
+  height: 20px;
+}
+
 .container {
   height: 100vh;
   position: relative;
@@ -93,9 +98,10 @@ body, html {
 }
 
 .test .question h2 {
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
   font-family: 'Anton', sans-serif;
   text-align: center;
+  width: 95% !important;
 }
 
 .test .question span {
@@ -197,6 +203,58 @@ body, html {
 
 .btn-clasic:hover {
   letter-spacing: .5px;
+}
+
+.disabled {
+  background: grey !important;
+}
+
+.overlay {
+  position: absolute;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 4px;
+  font-size: 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(#0BBFA7), to(#4200F6));
+  background: linear-gradient(to right, #0BBFA7, #4200F6);
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px black;
+  z-index: 3;
+  -webkit-animation: 2s overlayBg linear forwards;
+          animation: 2s overlayBg linear forwards;
+}
+
+@-webkit-keyframes overlayBg {
+  0%, 80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes overlayBg {
+  0%, 80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 500px) {

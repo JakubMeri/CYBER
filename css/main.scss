@@ -116,6 +116,18 @@ body, html{
     }
 }
 
+footer{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    font-family: 'Audiowide', cursive; 
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    text-shadow: 1px 1px 1px black;
+}
 
 @media (max-width: 500px){
     .container{
@@ -136,5 +148,17 @@ body, html{
     }
     .scroll{
         display: block;
+    }
+    .relocate{
+        height: 80vh;
+    }
+    footer{
+        margin-top: 10px;
+        background: $bg;
+    }
+}
+@media (max-width: 400px){
+    footer{
+        font-size: 14px;
     }
 }

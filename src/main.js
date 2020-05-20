@@ -139,18 +139,29 @@ let image = document.querySelector(".image");
 let modal = document.querySelector(".modal");
 let spravne  = [];
 let Q = [0];
+
+
 const loadQuestion = () => {
     test.innerHTML = `<h2>${otazka[Q].otazka}</h2>`;
      otazka[Q].odpovede.forEach( odpoved =>{
-        test.innerHTML += `<span><input class="odpoved" type="radio" name=${otazka[Q].otazka} value=${odpoved.spravna}>${odpoved.odpoved}</span>`;
+     test.innerHTML += `<span><input class="odpoved" type="radio" name=${otazka[Q].otazka} value=${odpoved.spravna}>${odpoved.odpoved}</span>`;
     })
-    test.innerHTML += `<button id="over" class="btn-clasic">OVER</button>`
+    test.innerHTML += `<button id="over" class="btn-clasic disabled" disabled>OVER</button>`
     image.style.background = `url(${otazka[Q].img}) center`;
     image.style.backgroundSize = `cover`;
 
-    let btn = document.getElementById("over");
-    btn.addEventListener("click", () => {
     let ziskajOdpovede = document.querySelectorAll(".odpoved");
+    let btn = document.getElementById("over");
+    ziskajOdpovede.forEach( odpoved => {
+        odpoved.addEventListener("click", () =>{
+            btn.classList.remove("disabled");
+            btn.removeAttribute("disabled");
+        })  
+    
+    })
+
+    btn.addEventListener("click", () => {
+    ziskajOdpovede = document.querySelectorAll(".odpoved");
     ziskajOdpovede.forEach( odpoved => {
         if(odpoved.checked){
             if(odpoved.value == 1){
@@ -173,6 +184,7 @@ const loadQuestion = () => {
 
 
 loadQuestion();
+
 
 let nextQ = () =>{
     document.getElementById("next").addEventListener("click", () => {
