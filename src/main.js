@@ -15,7 +15,7 @@ odpovede:[{
 }
 ],
 hint: "URL celým názvom <b>Uniform Resource Locator</b> je reťazec znakov s definovanou štruktúrou, ktorá slúži k presnej špecifikácií umiestnenia zdroja informácií na Internete.",
-img: ".././IMG/URL.jpg"
+img: ".././img/URL.jpg"
 },
 {
     otazka: "Je stránka s označením http:// bezpečná?",
