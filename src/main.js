@@ -194,13 +194,13 @@ let nextQ = () =>{
                 test.innerHTML = `<h2>Správne si zodpovedal na <br> ${hodnotenie} / ${otazka.length} otázok</h2> <button onclick= relocate() class='btn-clasic'>DOMOV</button>`
                 image.style.background = "linear-gradient(to right ,#0BBFA7, #4200F6)";
                 if(hodnotenie >= 7){
-                    image.innerHTML = "Veľmi dobre";
+                    image.innerHTML = "Super 😄";
                 }
                 else if(hodnotenie >= 4){
-                    image.innerHTML = "Zaber na svojom vzdelaní";
+                    image.innerHTML = "Mohlo to byť aj lepšie 😅";
                 }
                 else{
-                    image.innerHTML = "Radšej na internet nechoď";
+                    image.innerHTML = "Treba sa ešte niečo dovzdelávať 😉";
                 }
                 
         }
